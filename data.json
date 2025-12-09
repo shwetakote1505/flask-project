@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Git",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "title": "Learn Flask",
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "title": "Learn MongoDB",
+    "status": "Pending"
+  }
+]
