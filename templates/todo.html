@@ -1,7 +1,32 @@
-<label>Item ID:</label><br>
-<input type="number" name="itemId" required><br><br>
-<label>Item UUID:</label><br>
-<input type="text" name="itemUUID" required><br><br>
-<label>Item Hash:</label><br>
-<input type="text" name="itemHash" required><br><br>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>To-Do Page</title>
+</head>
+<body>
+  <h2>Add To-Do Item</h2>
 
+  <!-- The form submits to /submittodoitem (POST) -->
+  <form method="post" action="/submittodoitem">
+    <label for="itemId">Item ID:</label><br>
+    <input type="number" id="itemId" name="itemId" required><br><br>
+
+    <label for="itemUUID">Item UUID:</label><br>
+    <input type="text" id="itemUUID" name="itemUUID" required><br><br>
+
+    <label for="itemHash">Item Hash:</label><br>
+    <input type="text" id="itemHash" name="itemHash" required><br><br>
+
+    <label for="itemName">Item Name:</label><br>
+    <input type="text" id="itemName" name="itemName" required><br><br>
+
+    <label for="itemDescription">Item Description:</label><br>
+    <textarea id="itemDescription" name="itemDescription" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="/">Back to Home</a></p>
+</body>
+</html>
